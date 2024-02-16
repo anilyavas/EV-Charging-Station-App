@@ -26,11 +26,13 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "plugins": [
-      "expo-font",
-      {
-        "fonts": ["path/to/file.ttf"]
+        "plugins": [
+          [
+            "expo-font",
+            {
+              "fonts": ["path/to/file.ttf"]
+            }
+          ]
+        ]
       }
-    ]
-  }
 }
