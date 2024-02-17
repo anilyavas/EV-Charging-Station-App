@@ -7,9 +7,9 @@ import { useCallback } from 'react';
 SplashScreen.preventAutoHideAsync();
 export default function App() {
   const [fontsLoaded, fontError] = useFonts({
-    'Outfit-Regular': require('./assets/fonts/Outfit-Regular.ttf'),
-    'Outfit-SemiBold': require('./assets/fonts/Outfit-SemiBold.ttf'),
-    'Outfit-Bold': require('./assets/fonts/Outfit-Bold.ttf'),
+    'Poppins-Bold': require('./assets/fonts/Poppins-Bold.ttf'),
+    'Poppins-SemiBold': require('./assets/fonts/Poppins-SemiBold.ttf'),
+    'Poppins-Regular': require('./assets/fonts/Poppins-Regular.ttf'),
   });
 
   const onLayoutRootView = useCallback(async () => {
@@ -39,6 +39,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   text: {
-    fontFamily: 'Outfit-Bold',
+    fontSize: 20,
+    fontFamily: 'Poppins-Regular',
   },
 });
